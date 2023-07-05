@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            color box
+        </title>
+        <style>
+            .main{
+                display: flex;
+                margin-left: 500px;
+            }
+            .main2{
+                padding-left: 60px;
+            }
+            .button{
+                margin-top: 50px;
+                height: 40px;
+                width: 100px;
+            }
+
+        </style>
+    </head>
+    <body id="bn">
+        <h1 style="padding-left: 1100px;" id="op"></h1>
+        <div class="main">
+           <div>
+            <div style="height:80px;width:80px;background-color: blue;margin-top: 20px;" onmouseover="t1()" onmouseout="r1()" id="i1" >   
+            </div>
+            <div style="height:80px;width:80px;background-color: green;margin-top: 20px" id="i2"onmouseover="t2()" onmouseout="r2()">
+            </div>
+            <div style="height:80px;width:80px;background-color: red;margin-top: 20px" id="i3"onmouseover="t3()" onmouseout="r3()" >
+            </div>
+            <div style="height:80px;width:80px;background-color: lavender;margin-top: 20px" id="i4"onmouseover="t4()" onmouseout="r4()">
+            </div>
+            <div style="height:80px;width:80px;background-color: orange;margin-top: 20px" id="i5"onmouseover="t5()" onmouseout="r5()" > 
+            </div>
+            <div style="height:80px;width:80px;background-color: yellowgreen;margin-top: 20px" id="i6"onmouseover="t6()" onmouseout="r6()">
+            </div>
+        
+        </div>
+            <div class="main2">
+                <div  >
+                    <input  style="height:40px;width:100px;margin-top: 40px;" type="text"  id="ab" onchange="a1()">
+                </div>
+                <div>
+                    <input type ="text" style="height:40px;width:100px;margin-top: 40px;" onchange="a2()" id="bc">
+                </div>
+                <div>
+                    <input type ="text" style="height:40px;width:100px;margin-top: 55px;"onchange="a3()"id="cd">
+                </div>
+                <div>
+                    <input type ="text" style="height:40px;width:100px;margin-top: 50px;"onchange="a4()"id="ef">
+                </div>
+                <div>
+                    <input type ="text" style="height:40px;width:100px;margin-top: 50px;"onchange="a5()"id="gh">
+                </div>
+                <div>
+                    <input type ="text" style="height:40px;width:100px;margin-top: 55px;"onchange="a6()"id="ij">
+                </div>
+               
+                <div>
+                    <button onclick="f5()" class="button">sumbit</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+    <script> 
+    let y=[];
+     
+       
+  function a1(){
+          
+     let z= document.getElementById("i1").value="blue";
+     let a= document.getElementById("ab").value;
+       if(a==z){
+        y.push(a)
+       }
+       
+}
+function a2(){
+    let g=document.getElementById("i2").value="green";
+    let b=document.getElementById("bc").value;
+   if(b==g){
+    y.push(b)
+   }
+   
+}
+function a3(){
+         let k=document.getElementById("i3").value="red";
+     let s= document.getElementById("cd").value;
+   if(s==k){
+    y.push(s)
+   }
+       
+}
+function a4(){
+   let u=document.getElementById("i4").value="lavender"
+    let d=document.getElementById("ef").value;
+   if(d==u){
+      y.push(d)
+   }
+ 
+}
+function a5(){
+         let  o=document.getElementById("i5").value="orange"
+           
+     let e= document.getElementById("gh").value;
+  if(e==o){
+    y.push(e)
+  }
+       
+}
+function a6(){
+ let  h=document.getElementById("i6").value="yellowgreen"
+    let f=document.getElementById("ij").value;
+   if(f==h){
+   y.push(f)
+}
+}
+function f5(){
+     document.getElementById("op").innerHTML=y.length;
+}
+
+function t1(){
+    c1="blue";   
+          document.getElementById("bn").style.background="blue";
+        document.getElementById("ab").value="blue";
+         if(c1!=c2){
+                document.getElementById("bn").style.background= "white"
+                document.getElementById("ab").value="";
+            }
+            
+        }
+        function r1(){ 
+            c2="white"
+            document.getElementById("bn").style.background= "white"
+            document.getElementById("ab").value="";
+        }
+        function t2(){
+            c3="green"
+            document.getElementById("bn").style.background="green";
+            document.getElementById("bc").value="green";
+ if(c3!=v1){
+                document.getElementById("bn").style.background= "white"
+                document.getElementById("bc").value="";
+            }
+        }
+        function r2(){
+            v1="white"
+            document.getElementById("bn").style.background= "white";
+            document.getElementById("bc").value="";
+            
+        }
+        function t3(){
+            c4="red"
+            document.getElementById("bn").style.background="red";
+            document.getElementById("cd").value="red";
+            if(c4!=v2){
+                document.getElementById("bn").style.background= "white"
+                document.getElementById("cd").value="";
+            }
+
+        }
+        function r3(){
+            v2="white"
+            document.getElementById("bn").style.background= "white";
+            document.getElementById("cd").value="";
+        }
+        function t4(){
+            c5="lavender"
+            document.getElementById("bn").style.background="lavender";
+            document.getElementById("ef").value="lavender";
+            if(c5!=v3){
+                document.getElementById("bn").style.background= "white"
+                document.getElementById("ef").value="";
+            }
+
+        }
+        function r4(){
+            v3="white"
+            document.getElementById("bn").style.background= "white";
+            document.getElementById("ef").value="";
+        }
+        function t5(){
+            c6="orange"
+            document.getElementById("bn").style.background="orange";
+            document.getElementById("gh").value="orange";
+            if(c6!=v4){
+                document.getElementById("bn").style.background= "white"
+                document.getElementById("gh").value="";
+            }
+
+        }
+        function r5(){
+          v4="white"
+            document.getElementById("bn").style.background= "white";
+            document.getElementById("gh").value="";
+        }
+        function t6(){
+            c7="yellowgreen"
+            document.getElementById("bn").style.background="yellowgreen";
+            document.getElementById("ij").value="yellowgreen";
+            if(c7!=v5){
+                
+                document.getElementById("bn").style.background= "white"
+                document.getElementById("ij").value="";
+            }
+
+        }
+        function r6(){
+            v5="white"
+            document.getElementById("bn").style.background= "white";
+            document.getElementById("ij").value="";
+        }
+       
+
+       
+    </script>
+</html>
